@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:fontFamily="serif"
+        android:text="IMC Prognosis"
+        android:textAlignment="center"
+        android:textColor="#6EA35B"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/tvpoids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Donner votre poids:"
+        android:textColor="#9A9588"
+        android:textSize="24sp" />
+    <SeekBar
+        android:id="@+id/sbpoids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:max="120"
+
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineAmbientShadowColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/ettaile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Saisie votre taille (en cm)"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"
+        android:focusedSearchResultHighlightColor="#9A9588"/>
+
+    <Button
+        android:id="@+id/btnConsulter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#79CC56"
+        android:text="Consulter"
+        android:textColorHighlight="@color/white"
+        android:textSize="18dp" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ConsultActivity"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:fontFamily="serif"
+        android:text="La resultat est "
+        android:textAlignment="center"
+        android:textColor="#1F8F5E"
+        android:textSize="65dp" />
+
+
+    <TextView
+        android:id="@+id/tvReponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="280dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:padding="40dp"
+        android:text="Resultat ..."
+        android:textColor="#CCD886"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/line_shape"/>
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:backgroundTint="#79CC56"
+        android:text="Retour"
+        android:textSize="18sp" />
+</LinearLayout>
